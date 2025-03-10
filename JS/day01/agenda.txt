@@ -1,0 +1,86 @@
+== Js History
+== where js code is written
+== Varaibles
+== Datatypes
+== Operators
+== control flow
+== Ternary Operators
+== Communication with users
+
+/*=============================  Demo ==========================*/
+// select btn -- btn
+// btn.onclick == p // Error
+// internal
+// js Code -- comment
+// interpeted -- line by line
+// console.log("Hello mearn Track from external file");
+// console.log("First Lecture .....");
+
+// console.log("Pet");
+// var firstName = "mona"; // string
+// var num = 10; // number --
+// var x2 = 10.34; // number -- float
+// var flag = false; // boolean
+
+// console.log(typeof firstName);
+
+// console.log(typeof num);
+// console.log(typeof x2);
+// console.log(typeof flag);
+
+// var fname;
+// fname = "ali";
+// console.log(fname); // undefined
+
+// console.log(typeof fname);
+
+// var fname = "ahmed"; // string
+
+// fname = "ali"; // reassign
+// fname = 10; // number
+// console.log(fname);
+// var fname = "ali";
+// var fname = 10; //
+
+// console.log(fname);
+
+/** ============================================================ */
+// var student = null; // in memory empty {}
+
+// student = "ali";
+// console.log(student);
+// console.log(typeof student);
+// var user = null; // reassign response
+
+// user = 123;
+// var x = "mona"; // string
+
+// var y = 10; // string // 10'
+
+// console.log(x + y);
+
+// var x = 10;
+// console.log(typeof x); // number
+
+// // coercion
+// var y = String(10);
+
+// console.log(y); // string
+// console.log(typeof y);
+// var n = "20";
+
+// var x = Number(n);
+// console.log(x);
+// console.log(typeof x);
+
+// console.log(20 + 20 + "5");
+// var x = "20"; //Number NaN
+
+// var y = 10;
+
+// console.log(x - y);
+// var flag = false;
+
+// var show = Boolean(null);
+
+// console.log(show);

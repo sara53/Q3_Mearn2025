@@ -1,0 +1,16 @@
+== functions 
+    -- built in function 
+    -- user defined function
+        -- function expression
+        -- function statement
+        -- callback function
+        -- IIFE
+        -- anynomous 
+
+
+== Hoisting 
+== How js executes scripts in memory
+== string API
+== Array
+== Date Object (self Study)
+
