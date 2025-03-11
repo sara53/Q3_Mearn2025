@@ -1,0 +1,8 @@
+== functions
+    == How js Engine execute function in memory
+    == Local Scope VS Global Scope
+    == Shadwing
+    == IIFE
+    == Object
+    == Math
+--------------------------------------------------
