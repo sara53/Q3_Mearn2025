@@ -1,0 +1,32 @@
+== DOM
+
+/** How to select Element From Dom
+ * ------------------Methods----------------
+ * == getElementById ==> HTMLElement | null
+ * == querySelector ==> HTMLElement | null
+ * == getElementsByClassName ==> collection[]
+ * == getElementsByTagName ==> collection[]
+ * == getElementsByName ==> collection[]
+ * == querySelectorAll ==> NodeList[]
+ * -------------------- (PROPS) ---------------
+ * == document.body -- select body Element
+ * == document.links -- select all anchor from body
+ * == document.images -- select all anchor from body
+ * == document.forms -- select all anchor from body
+ * == element.firstElementChild
+ * == element.lastElementChild
+ */
+/**
+ * == How to Change Content
+ *      -- innerText
+ *      -- innerHTML
+ *      -- textContent (Search)
+ ---------------------Input--------------------
+ * == value
+ */
+ /** How to change Style
+ * == style
+ * == className
+ * == ClassList
+ *
+ */

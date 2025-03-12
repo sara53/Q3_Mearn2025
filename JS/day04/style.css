@@ -1,0 +1,75 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+	background-color: #eee;
+	padding: 2rem;
+	margin: 1rem;
+	border-radius: 0.275rem;
+}
+
+p {
+	background-color: #ccc;
+	padding: 1rem;
+	margin: 0.75rem;
+	border-radius: 0.275rem;
+}
+
+h2,
+h1 {
+	margin-bottom: 1rem;
+}
+
+button {
+	cursor: pointer;
+	width: 170px;
+	padding: 0.5rem 0.75rem;
+	border: none;
+	background-color: #180847;
+	color: #ddd;
+	border-radius: 5px;
+	display: block;
+	margin: 1rem 0px;
+}
+
+input[type="text"] {
+	display: block;
+	margin-left: 10px;
+	width: 200px;
+	padding: 0.25rem;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	outline: 0;
+}
+
+.info {
+	letter-spacing: 2px;
+}
+
+.testData {
+	font-size: 12px;
+}
+
+.jsClass {
+	background-color: #162510;
+	color: #fff;
+}
+
+a {
+	display: block;
+	margin-bottom: 2rem;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+.custom-link {
+	color: red;
+}
+
+img {
+	width: 200px;
+}
