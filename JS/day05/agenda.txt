@@ -1,0 +1,15 @@
+== DOM 
+    -- Create Element From Js
+
+== Events
+    -- add Attribute on Element ===> onclick = "fun()"
+    -- Attach Function ===           element.onclick = fun 
+    -- addEventListener ==           element('click',func)
+
+== Bom (Broswer OBject Model)
+    -- window
+    -- screen [Search]
+    -- location
+    -- history
+    -- navigator
+----------------------------------------------------
