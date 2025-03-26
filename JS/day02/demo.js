@@ -11,9 +11,9 @@
  * == sort
  */
 
-// var str = "ahmed"; //
+var str = "ahmed";
 
-// console.log(str.split("").reverse().join(""));
+console.log(str.split("").reverse().join(""));
 
 // var arr1 = [10, 4, 6, 8, 9];
 // var arr2 = [ "mona", "ali" ];

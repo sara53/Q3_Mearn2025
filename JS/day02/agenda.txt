@@ -5,7 +5,7 @@
         -- function statement
         -- callback function
         -- IIFE
-        -- anynomous 
+        --anonymous
 
 
 == Hoisting 
