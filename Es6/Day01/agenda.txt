@@ -1,0 +1,8 @@
+==var -- let -- const
+== Pass by Value & Pass by Refernce
+== Spread Operator
+== Rest Params
+== Default Values
+== Arrow Function
+== String API
+== Array API
