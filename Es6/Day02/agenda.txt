@@ -1,0 +1,11 @@
+== New Syntax (Object)
+== Object.key
+== Object.values
+== object.entries
+== Object.assign
+-------------------------------------
+== Asynchrouns Execution 
+== Promise
+    == then -- catch
+    == async .. await
+== Fetch
