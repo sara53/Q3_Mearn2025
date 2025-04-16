@@ -1,0 +1,4 @@
+1- install nodejs
+-- node -v
+2- install typescript
+	== npm i -g typescript

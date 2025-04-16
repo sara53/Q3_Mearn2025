@@ -1,0 +1,138 @@
+/** Datatypes
+ * ---------------
+ * == string
+ * == number
+ * == boolean
+ * == undefined
+ * == null
+ * == any
+ *
+ */
+
+// var fname: string;
+
+// console.log(fname);
+
+// var num: number = 10;
+
+// num = 11;
+
+// num = true;
+
+// var fname;
+// console.log(fname); //
+// var fname: any;
+
+// var obj: any = {};
+
+// var fname!: string;
+
+// console.log(fname);
+
+// type stringOrNumber = string | number | boolean;
+
+// var x: stringOrNumber = 10;
+// var y: stringOrNumber = "alaa";
+// x = "ali";
+// x = true;
+
+// console.log(fname);
+// fname = 10;
+// fname = true;
+// console.log(fname); //
+
+/**================================= */
+// var x?: string = "alaa"; // string | undefined
+// var x: string | undefined;
+/**================================= */
+// array
+// let arr = ["hpda"];
+
+// arr.push("ali");
+// arr.push(10);
+
+// tuple
+// let arr: [string, number] = ["mona", 10];
+/**================================= */
+
+// type customProduct = { id: number; name: string; price: number };
+
+// let product1: customProduct = { id: 1, name: "book", price: 200 };
+// let product2: customProduct = { id: 1, name: "book", price: 200 };
+// let person: { fname: string; age: string | number } = {
+// 	fname: "ahmed",
+// 	age: 25,
+// };
+
+// person.age = "pet";
+
+// let products: { id: number; name: string; price: number }[] = [
+// 	{ id: 1, name: "book", price: 200 },
+// 	{ id: 2, name: "pen", price: 200 },
+// 	{ id: 3, name: "watch", price: 200 },
+// ];
+
+// products.push({ id: 1, name: "book", price: 200 });
+
+// console.log(products);
+
+// function sum(x: number, y: number, ...w: string[]) {
+// 	console.log("hello sum");
+// }
+
+// sum(10, 220);
+
+// sum(true, true);
+// sum("mona", "ali");
+// sum(10, 20, "ahmed", "10");
+// function sum(x: number, y: number): void {
+// 	console.log("hello sum");
+// }
+// function sum(x: number, y: number): number {
+// 	console.log("hello sum");
+// 	return 10;
+// }
+
+// function sum(x: number, y: number): () => number {
+// 	console.log("hello sum");
+// 	return function (): number {
+// 		return 10;
+// 	};
+// }
+
+// sum(10, 220);
+
+// function sum(x: number | string = "0", y: number = 0) {}
+
+// sum();
+// function sum(x: number, y?: number): number {
+// 	// if (y) return x + y;
+
+// 	return x + y!;
+// }
+
+// sum(10);
+
+// let arr: [string, number] = ["mona", 20];
+// let arr: (string | number)[] = [20, 20];
+
+// function showData(fname: string, age: number) {
+// 	console.log(fname, age);
+// }
+
+// showData(...arr);
+
+// function test(options: {}) {
+// 	let defaultValues: { fname: string; age: number } = {
+// 		fname: "default fname",
+// 		age: 1,
+// 	};
+// 	Object.assign(defaultValues, options);
+// }
+
+// function test({ fname, age }) {
+// 	console.log(fname);
+// }
+
+// test({ fname: "Ali", age: 20, color: "red" });
+/**============================================= */
