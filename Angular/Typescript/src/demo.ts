@@ -104,3 +104,15 @@
 
 // let cairo = fontStyle.normal;
 // let tahoma = fontStyle.bold;
+
+// class Product {
+// 	constructor(public id: number, public name: string) {}
+// }
+
+// class Test extends Product {
+// 	constructor(id: number, name: string, public age: number) {
+// 		super(1, "Test");
+// 	}
+// }
+
+// let t = new Test(1, "ali", 25);
