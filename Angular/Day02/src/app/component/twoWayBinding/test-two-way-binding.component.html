@@ -1,0 +1,61 @@
+<div class="container alert alert-dark mt-5">
+  Normal Way
+  <h1>Event Binding & Two Way Binding</h1>
+  <input
+    type="text"
+    #myInput
+    (input)="getInputValue(myInput.value)"
+    placeholder="Enter Your Data"
+    class="form-control my-5"
+  />
+  <p class="lead mt-4 fs-2">{{ inputValue }}</p>
+</div>
+<!-- <div class="container alert alert-dark mt-5">
+  <h1>Two Way Binding (FormsModule)</h1>
+  <input
+    type="text"
+    name="studentName"
+    placeholder="Enter Your Data"
+    class="form-control my-5"
+    [(ngModel)]="studentAge"
+  />
+  <p class="lead mt-4 fs-2">{{ studentAge }}</p>
+</div>
+
+<!-- Template Form -->
+
+<!-- <div class="container alert alert-dark mt-5">
+  <h1>Login</h1>
+  <form>
+    <input
+      type="text"
+      name="studentName"
+      placeholder="Enter Your Student Name"
+      class="form-control my-5"
+      [(ngModel)]="studentName"
+    />
+    <input
+      type="text"
+      name="x"
+      placeholder="Enter Your Student Age"
+      class="form-control my-5"
+      [(ngModel)]="studentAge"
+    />
+    <button class="btn btn-dark" (click)="login()">Login</button>
+  </form>
+</div> -->
+<!-- Refernce-->
+
+<!-- <div class="container alert alert-dark mt-5">
+  <h1 #mearn>Login</h1>
+
+  <button (click)="operationHandler(mearn)" class="btn btn-primary mt-5">
+    Click
+  </button>
+  <input
+    type="text"
+    name="studentName"
+    placeholder="Enter Your Student Name"
+    class="form-control my-5"
+  />
+</div> -->

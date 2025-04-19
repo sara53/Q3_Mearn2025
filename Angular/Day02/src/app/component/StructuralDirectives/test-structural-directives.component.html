@@ -1,0 +1,99 @@
+<!-- <div class="container mt-5">
+  <h1 class="text-muted text-center mb-3">Products</h1>
+
+  <div class="border p-4 m-3 rounded" *ngFor="let x of products; let i = index">
+    <h3 class="bg-dark text-light p-2 rounded">{{ i + 1 }} : {{ x }}</h3>
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+      perferendis!
+    </p>
+    <p class="lead">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+      perferendis!
+    </p>
+  </div>
+</div> -->
+<!-- <div class="container mt-5">
+  <h1 class="text-muted text-center mb-3">Products</h1>
+  <div class="row">
+    @for (product of products; track $index;) {
+
+    <div class="col-sm-6 col-md-4 g-3">
+      <div class="border p-4 m-3 rounded">
+        <h3 class="bg-dark text-light p-2 rounded">
+          {{ $index }} : {{ product }}
+        </h3>
+        <p class="fs-3 lead">First Card:{{ $first }}</p>
+        <p class="fs-3 lead">Event Card:{{ $even }}</p>
+        <p class="fs-3 lead">Odd Card :{{ $odd }}</p>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+          perferendis!
+        </p>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore,
+          perferendis!
+        </p>
+      </div>
+    </div>
+
+    }
+  </div>
+</div> -->
+
+<!-- <div class="container mt-5">
+  <button class="btn btn-dark" (click)="toggle()">Toggle</button>
+
+  @if (flag ) {
+  <div class="border p-4 mt-5 rounded">
+    <h1>Welcome mearn at ITI</h1>
+    <p class="lead">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum cum
+      ratione veritatis quisquam sunt consequuntur similique quas cupiditate
+      sequi itaque dolore necessitatibus debitis quidem, omnis quae? Dolore
+      labore architecto est.
+    </p>
+  </div>
+  }@else if(color == 'red') {
+  <div class="alert alert-danger p-4 mt-5 rounded">
+    <h1>Color == red</h1>
+  </div>
+  }@else {
+  <div class="alert alert-warning p-4 mt-5 rounded">
+    <h1>Else Block</h1>
+  </div>
+  }
+</div> -->
+<!--
+@for (item of products; track $index) {
+
+<div class="border p-4 container">
+  <h1>{{ item }}</h1>
+</div>
+
+}@empty {
+<div class="alert alert-danger">
+  <h3>No Products Founded</h3>
+</div>
+} -->
+
+<div class="container">
+  <h1>Your Fav Color</h1>
+  @switch (color) { @case ('red') {
+  <div class="mt-5 alert alert-danger p-5">
+    <h2>your Fav Color is : red</h2>
+  </div>
+  } @case ('green') {
+  <div class="mt-5 alert alert-success p-5">
+    <h2>your Fav Color is : green</h2>
+  </div>
+  } @case ('blue') {
+  <div class="mt-5 alert alert-primary p-5">
+    <h2>your Fav Color is : blue</h2>
+  </div>
+  } @default {
+  <div class="mt-5 alert alert-dark p-5">
+    <h2>Your don't have any Fav Colors</h2>
+  </div>
+  } }
+</div>
