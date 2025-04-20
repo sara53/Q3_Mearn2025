@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  <p class="lead">{{ trackName }}</p>
+  <p class="lead mt-4 fs-2">Student Name :{{ dataFromChild.name }}</p>
+  <app-content [pett]="dataFromChild.name" [x]="'wkefwfefwe'" />
+  <app-login (myEvent)="getData($event)" />
+</div>
+<!-- 
+<p class="alert alert-success m-5 lead fs-2">
+  Number Of Products :{{ productCount }}
+</p>
+<app-counter (onAddProduct)="getProductCount($event)" /> -->

@@ -1,0 +1,7 @@
+<div class="container mt-4">
+  <h1>Users List</h1>
+
+  @for (user of users; track user.id) {
+  <app-user-details [user]="user" />
+  }
+</div>
