@@ -1,0 +1,16 @@
+<div class="bg-dark container p-5 mt-4 rounded text-light">
+  <h1 class="text-center text-warning">Product Details :{{ productId }}</h1>
+  <p class="lead fs-3 mt-2">Product Name : dummy Product</p>
+  <p class="lead fs-3 mt-2">Product price : 200</p>
+  <p class="lead fs-3 mt-2">Product quantity : 200</p>
+  <div>
+    <i class="text-warning bi bi-star-fill"></i>
+    <i class="text-warning bi bi-star-fill"></i>
+    <i class="text-warning bi bi-star-fill"></i>
+    <i class="text-warning bi bi-star-fill"></i>
+    <i class="text-warning bi bi-star-fill"></i>
+  </div>
+  <button class="mt-4 btn btn-primary" [routerLink]="['/products']">
+    Back to Products
+  </button>
+</div>
