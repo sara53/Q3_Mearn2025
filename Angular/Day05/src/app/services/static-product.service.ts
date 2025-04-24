@@ -9,19 +9,19 @@ export class StaticProductService {
   constructor() {
     this.products = [
       {
-        id: 1,
+        id: ' 1',
         name: 'Book',
         price: 200,
         quantity: 10,
       },
       {
-        id: 2,
+        id: ' 2',
         name: 'Pen',
         price: 100,
         quantity: 60,
       },
       {
-        id: 3,
+        id: '3',
         name: 'Watch',
         price: 90,
         quantity: 40,

@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Ali"
+    }
+  ],
+  "products": [
+    {
+      "name": "Laptop updated",
+      "price": "200",
+      "quantity": "10",
+      "id": "9c34"
+    },
+    {
+      "name": "phone",
+      "price": 500,
+      "quantity": "20",
+      "id": "eac0"
+    },
+    {
+      "id": "a6dc",
+      "name": "book",
+      "price": 400,
+      "quantity": 10
+    }
+  ]
+}

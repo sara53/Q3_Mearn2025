@@ -27,6 +27,7 @@
       />
       <button class="btn btn-dark" (click)="filterBy()">Filter By</button>
     </div>
+    @if (products.length>0) {
     <table class="table mt-4">
       <thead>
         <tr>
@@ -54,11 +55,15 @@
               [routerLink]="['/products', product.id]"
               class="fs-4 mx-1 text-warning bi bi-eye-fill"
             ></i>
-            <i class="fs-4 mx-1 text-danger bi bi-trash3-fill"></i>
+            <i
+              (click)="deleteHandler(product.id)"
+              class="fs-4 mx-1 text-danger bi bi-trash3-fill"
+            ></i>
           </td>
         </tr>
         }
       </tbody>
     </table>
+    }
   </div>
 </div>
