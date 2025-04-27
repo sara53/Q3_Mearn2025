@@ -4,6 +4,7 @@ import { Router, RouterLink } from '@angular/router';
 import { StaticProductService } from '../../services/static-product.service';
 import { IProduct } from '../../models/iproduct';
 import { FormsModule } from '@angular/forms';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-products',
@@ -16,16 +17,30 @@ export class ProductsComponent implements OnInit {
   category!: string;
   products!: IProduct[];
   constructor(
-    private productServices: StaticProductService,
+    private productServices: ProductService,
     private router: Router
   ) {}
   ngOnInit(): void {
-    this.products = this.productServices.getALLProducts();
+    this.productServices.getAllProducts().subscribe({
+      next: (response) => (this.products = response),
+      complete: () => {},
+      error: (error) => console.log(error),
+    });
   }
 
   filterBy() {
     this.router.navigate(['/products'], {
       queryParams: { size: this.size, category: this.category },
+    });
+  }
+
+  deleteProductHandler(productId: string) {
+    this.productServices.deleteProduct(productId).subscribe({
+      next: (response) => {
+        this.products = this.products.filter(
+          (product) => product.id != productId
+        );
+      },
     });
   }
 }

@@ -1,5 +1,5 @@
 <div class="container mt-4">
-  <form (submit)="productHandler()">
+  <form [formGroup]="productForm" (submit)="productHandler()">
     <div class="mb-3">
       <label for="productNameInput" class="form-label">Product Name</label>
       <input
@@ -7,6 +7,7 @@
         name="productName"
         class="form-control"
         id="productNameInput"
+        formControlName="name"
         aria-describedby="emailHelp"
         placeholder="Enter PRoduct Name"
       />
@@ -18,6 +19,7 @@
         name="productPrice"
         class="form-control"
         id="productPriceInput"
+        formControlName="price"
         aria-describedby="emailHelp"
         placeholder="Enter Product Price"
       />
@@ -29,11 +31,14 @@
         name="productQuantity"
         class="form-control"
         id="productQuantityInput"
+        formControlName="quantity"
         aria-describedby="emailHelp"
         placeholder="Enter Product Quantity"
       />
     </div>
 
-    <button type="submit" class="btn btn-dark">add New PRoduct</button>
+    <button type="submit" class="btn btn-dark">
+      {{ productId == "0" ? "add New Product" : "Edit Product" }}
+    </button>
   </form>
 </div>

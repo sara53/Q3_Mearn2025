@@ -1,0 +1,9 @@
+header {
+	background-color: #ddd;
+	padding: 30px;
+	text-align: center;
+}
+
+.myHeader {
+	background-color: green;
+}
