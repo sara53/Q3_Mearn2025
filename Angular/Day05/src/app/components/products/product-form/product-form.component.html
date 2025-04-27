@@ -1,5 +1,9 @@
 <div class="container mt-4">
+<<<<<<< HEAD
   <form [formGroup]="productForm" (submit)="productHandler()">
+=======
+  <form (submit)="productHandler()" [formGroup]="productForm">
+>>>>>>> 29e0f6cb72afe192113447378f548be2104aa738
     <div class="mb-3">
       <label for="productNameInput" class="form-label">Product Name</label>
       <input
@@ -38,7 +42,11 @@
     </div>
 
     <button type="submit" class="btn btn-dark">
+<<<<<<< HEAD
       {{ productId == "0" ? "add New Product" : "Edit Product" }}
+=======
+      {{ productId == 0 ? "add New Product" : "Edit Product" }}
+>>>>>>> 29e0f6cb72afe192113447378f548be2104aa738
     </button>
   </form>
 </div>

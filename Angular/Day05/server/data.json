@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "products": [
     {
       "id": "7a07",
@@ -11,6 +12,32 @@
       "price": "44",
       "quantity": "11",
       "id": "5356"
+=======
+  "users": [
+    {
+      "id": "1",
+      "name": "Ali"
+    }
+  ],
+  "products": [
+    {
+      "name": "Laptop updated",
+      "price": "200",
+      "quantity": "10",
+      "id": "9c34"
+    },
+    {
+      "name": "phone",
+      "price": 500,
+      "quantity": "20",
+      "id": "eac0"
+    },
+    {
+      "id": "a6dc",
+      "name": "book",
+      "price": 400,
+      "quantity": 10
+>>>>>>> 29e0f6cb72afe192113447378f548be2104aa738
     }
   ]
 }
