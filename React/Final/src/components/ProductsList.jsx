@@ -5,28 +5,28 @@ import { Link } from 'react-router-dom'
 import { Loading } from '../components'
 import { deleteProduct, getAllProducts } from '../API/productAPI'
 import { useFetch } from '../custom-hooks/useFetch'
+import { useDispatch, useSelector } from 'react-redux'
+import { deleteProductAction, getAllProductsAction } from '../store/productSlice'
 
 export function ProductsList() {
 
+    const { products, isLoading, errors } = useSelector( store => store.productSlice )
 
-    const [ products, setProducts ] = useState( [] )
-    const [ errors, setErros ] = useState( null )
-    const [ isLoading, setIsLoading ] = useState( false )
+    const dispatch = useDispatch();
 
     useEffect( () => {
-        getAllProducts().then( ( response ) => {
-            setProducts( response.data )
-        } ).catch( ( error ) => setErros( error ) )
+
+        dispatch( getAllProductsAction() )
+
     }, [] )
 
     const deleteHandler = ( productId ) => {
-        deleteProduct( productId ).then( () => {
-            setProducts( products.filter( ( product ) => product.id != productId ) )//
-        } ).catch( ( error ) => setErros( error ) )
+        dispatch( deleteProductAction( productId ) )
     }
 
     return (
         <>
+            Test
             {isLoading && <Loading />}
             {errors && <Error />}
             {!isLoading && !errors && <Table striped bordered hover className='text-center'>

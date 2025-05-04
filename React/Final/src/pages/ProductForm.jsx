@@ -4,10 +4,14 @@ import { Button, Container, Form } from 'react-bootstrap'
 import { useNavigate, useParams } from 'react-router-dom'
 
 import { addNewProduct, editProduct, getProductById } from '../API/productAPI'
+import { useDispatch } from 'react-redux'
+import { addProductAction } from '../store/productSlice'
 export function ProductForm() {
 
     const navigate = useNavigate();
     const { id } = useParams();
+
+    const dispatch = useDispatch();
 
 
     const [ formValues, setFormValus ] = useState( {
@@ -33,16 +37,15 @@ export function ProductForm() {
 
 
     const submitHandler = ( e ) => {
-
         e.preventDefault();
         if ( id == 0 ) {
-            addNewProduct( formValues ).then( ( response ) => {
+            dispatch( addProductAction( formValues ) ).then( () => {
                 navigate( '/products' )
             } )
+
         } else {
-            editProduct( id, formValues ).then( () => {
-                navigate( '/products' )
-            } ).catch( ( error ) => console.log( error ) )
+            // dispatch editaction
+
         }
 
 
